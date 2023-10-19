@@ -4,39 +4,41 @@ int main()
 {
 	//take two numbers as input
 	float a, b;
-	cout<<"Enter first number: ";
+	cout<<"Enter the first number: ";
 	cin>>a;
-	cout<<"Enter second number: ";
+	cout<<"Enter the second number: ";
 	cin>>b;
 	
-	//select operation to be performed
+	//select the operation to be performed
 	char operation;
 	cout<<"Select operation (+, -, *, /): ";
 	cin>>operation;
 	
-	//for sum
+	//Sum
 	if (operation == '+'){
 		float sum = a+b;
 		cout<<"Result="<<sum;}
 		
-	//for subt
+	//Subtraction
 	else if (operation == '-'){
 		float subt = a-b;
 		cout<<"Result="<<subt;}
 		
-	//for product
+	//Multiplication
 	else if (operation == '*'){
 		float product = a*b;
 		cout<<"Result="<<product;}
 		
-	//for sum
+	//Division
 	else if (operation == '/'){
 		if (b == 0){
 			cout<<"Division by zero is not possible!";}
 		else {
-		float sum = a/b;
-		cout<<"Result="<<sum;}}
+		float div = a/b;
+		cout<<"Result="<<div;}}
 		
 	else cout<<"Invalid operation type.";
+
+	return 0;
 		
 }
